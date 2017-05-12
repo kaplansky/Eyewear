@@ -1,0 +1,616 @@
+@import "fonts"
+@import "_libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+  margin: 0
+  padding: 0
+ 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ 
+body 
+	line-height: 1
+
+ol, ul 
+	list-style: none
+blockquote, q
+	quotes: none
+blockquote:before, blockquote:after, q:before, q:after
+	content: none
+table 
+	border-collapse: collapse; border-spacing: 0
+ 
+*
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1
+	font-family: $main-font
+	overflow-x: hidden
+	opacity: 1
+	font-size: 18px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+h1
+	font-size: 30px
+	font-family: $font-bold
+	line-height: 36px
+
+h2
+	font-size: 18px
+
+p
+	font-family: "Gotham Book", sans-serif
+	font-size: 24px
+	line-height: 30px
+	color: $main-color
+
+.left-side
+	font-family: $font-light
+	display: inline-block
+.right-side
+	font-family: $font-bold
+	display: inline-block
+
+.flex-container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	flex-direction: row
+
+
+.logo
+	font-size: 48px
+	color: #303437
+	line-height: 24px
+	.left-side
+		font-family: "Roboto Light", sans-serif
+	.right-side
+		font-family: "Roboto Medium", sans-serif
+
+.tagline
+	font-size: 24px
+	color: #212121
+
+.tagline
+	.vertical-txt
+		text-transform: uppercase
+		position: absolute
+		float: left
+		-webkit-transform: rotate(270deg) 
+		-moz-transform: rotate(270deg) 
+		-ms-transform: rotate(270deg) 
+		-o-transform: rotate(270deg) 
+		transform: rotate(270deg) 
+		top: 0
+		left: -120px
+
+
+.price
+	font-size: 30px
+	font-family: $font-bold
+	color: #212121
+
+a.button
+	font-family: $font-bold
+	font-size: 18px
+	color: #fff
+	padding: 23px 33px 24px 71px
+	letter-spacing: 1.5px
+	border: 1px #fff solid
+	text-transform: uppercase
+	display: inline-block
+	i
+		font-size: 18px
+		margin-left: 50px
+	&:hover, &:focus, &:active
+		background-color: rgba(255, 255, 255, 0.3);
+		text-decoration: none
+
+
+.container
+	max-width: 1450px
+	width: 100%
+	padding: 0
+	position: relative
+	.content
+		margin: 0 20px
+		width: auto
+
+
+
+header
+	height: 950px
+	background-repeat: no-repeat
+	background-color: #F2EBE6
+	.top_line
+		margin-top: 60px
+		.logo
+			display: inline-block
+			margin-right: 260px
+		ul
+			display: inline-block
+			li
+				display: inline-block
+				margin-right: 25px
+				text-transform: uppercase
+				font-size: 14px
+				&:nth-child(3)
+					margin: 0
+		.search
+			display: inline-block
+		form 
+  		position: relative
+  		width: 250px
+  		margin: 0 auto
+  		height: 35px
+		.buy_but
+			display: inline-block
+			margin-bottom: 10px
+			a
+				color: #212121
+				text-transform: uppercase
+				font-size: 14px
+			.icon_buy
+				width: 30px
+				height: 30px
+				background-image: url(../img/icon-set.png)
+				background-position: 24% 30%
+				display: inline-block
+	.header-glass
+		margin-top: 180px
+	 .header-item 
+	 	text-align: center
+	 	position: relative
+	 	display: inline-block
+	 	.man_glass
+			margin-right: 150px
+	 	.right-side
+	 		margin-left: -45px
+	 	.desc_text
+	 		font-size: 150px
+	 		color: #fff
+	 		line-height: 140px
+	 		text-transform: uppercase
+	 	.header-glass-item
+	 		position: absolute
+	 		top: 115px
+	 		left: 30px
+	 		img
+	 			width: 600px
+	 			z-index: 100
+	 		.header_bottom_text
+	 			color: #a77c5a
+	 			text-transform: uppercase
+	 			letter-spacing: 1.5px
+	 			margin-top: 62px
+	 			font-size: 16px
+
+header 
+	.header-glass
+		.man_glass
+	 		.header-glass-item
+	 			left: -100px
+	 			top: 110px
+
+section.offers
+	z-index: 300
+	margin-top: -115px
+	.tagline
+		.vertical-txt
+			text-transform: uppercase
+			top: 85px
+	.offers_item
+		overflow: hidden
+		i
+			font-size: 18px
+			color: #fff
+			margin-left: 50px
+		span
+			display: block
+			width: 275px
+			color: #fff
+			text-align: center
+			margin: 0 auto
+			font-size: 30px
+			line-height: 35px
+		.first_item
+			position: relative
+			.offers_but
+				position: absolute
+				top: 361px
+				left: 393px
+				.button	
+					display: inline-block
+					margin-top: -7px
+		.second_item
+			position: relative
+			margin-right: 11px
+			.offers_but
+				position: absolute
+				top: 650px
+				left: 65px
+				.button
+					margin-top: -5px
+		.info
+			display: inline-block
+			border: 1px #D4BDAB solid
+			margin-top: 31px
+			.icon
+				width: 55px
+				height: 39px
+				background-image: url(../img/icon-set.png)
+				background-position: 50px 0
+				margin: 0 auto
+			.offering_caption
+				text-transform: uppercase
+				font-family: $font-bold
+				font-size: 24px
+				color: #a77c5a
+				line-height: 1
+				letter-spacing: 2.5px
+				margin-top: 10px
+			.offering_subtittle
+				color: #b2b2b2
+				font-size: 24px
+				font-family: "Myriad Pro Semibold", sans-serif
+				font-weight: 100
+				line-height: 1
+				margin-top: 5px
+    		margin-right: 6px
+			.left_offering
+				display: inline-block
+				float: left
+				text-align: center
+				padding: 69px 75px
+				text-align: center
+			.right_offering
+				display: inline-block
+				float: left
+				padding: 68px 19px
+				text-align: center
+				.icon
+					background-position: -73px 0
+			.vert_lign
+				display: inline-block
+				width: 1px
+				height: 181px
+				float: left
+				border-left: 1px #a77c5a solid
+				margin: 33px 0
+
+section.sellers
+	margin-top: 90px
+	.tagline
+		.vertical-txt
+			text-transform: uppercase
+			top: 100px
+	.flex-container
+		justify-content: space-around
+		height: 513px
+		.sellers_item
+			position: relative
+			display: inline-block
+			&:hover
+				cursor: pointer
+				.border_bg
+					display: block
+				.sellers_inner
+					.add_item
+						display: block
+					span
+						margin-top: 48px
+			.border_bg
+				border: 20px solid #a77c5a
+				width: 221px
+				height: 350px
+				position: absolute
+				z-index: 0px
+				top: 0
+				left: 30px
+				opacity: 0.15
+				display: none
+				transition: all 0.5s
+			.sellers_inner
+				text-align: center
+				.add_item
+					display: none
+					margin-right: 20px
+					margin-top: -25px
+					a
+						color: #a77c5a
+						font-size: 36px
+						&:hover
+							cursor: pointer
+				span
+					text-transform: uppercase
+					color: #a77c5a
+					width: 260px
+					font-size: 18px
+					line-height: 21px
+					display: block
+					//margin-top: 68px
+					letter-spacing: 2px
+					transition: all 0.5s
+					margin: 0 auto
+				.price
+					transition: all 0.5s
+	.learn_but
+		text-align: center
+		margin-bottom: 170px
+		a.button
+			color: #000
+			margin-top: 50px
+			border: 1px solid #000
+			margin: 0 auto
+			display: inline-block
+			&:hover
+				background-color: rgba(0, 0, 0, 0.1);
+
+section.brands	
+	padding: 100px 0
+	background-color: #E5E5E5
+	.tagline
+		.vertical-txt
+			top: -125px
+			text-transform: uppercase
+			left: -65px
+	.flex-container
+		justify-content: center
+		.brand_item
+			text-align: center
+			margin-right: 55px
+			.brand_border
+				width: 270px
+				height: 270px
+				display: block
+				border: 1px #AAAAAA solid
+				img
+					width: 70%
+					display: block
+					margin: 0 auto
+			&:nth-child(4)
+				margin: 0
+			.brand_subtittle
+				text-transform: uppercase
+				color: $main-color
+				font-size: 18px
+				margin-top: 30px
+				display: inline-block
+			.Ray_band
+				padding-top: 100px
+				img
+					width: 180px
+			.Carriera
+				padding-top: 120px
+				img
+					width: 180px
+			.Rusrol
+				padding-top: 88px
+				img
+					width: 150px
+			.Gucci
+				padding-top: 115px
+				img
+					width: 190px
+
+section.news
+	padding: 110px 0
+	.tagline
+		.vertical-txt
+			top: 500px
+			text-transform: uppercase
+	.flex-container
+		justify-content: center
+		.offers_item
+			position: relative
+			margin-right: 33px
+			&:nth-child(3)
+				margin: 0
+			.offers_but
+				position: absolute
+				top: 150px
+				left: 50px
+				i
+					font-size: 18px
+					color: #fff
+					margin-left: 50px
+				span
+					display: block
+					width: 275px
+					color: #fff
+					text-align: center
+					margin: 0 auto
+					font-size: 30px
+					line-height: 35px
+			.button
+				position: absolute
+				top: 280px
+				left: 50px
+	.e-mail
+		text-align: center
+		p
+			width: 672px
+			height: 85px
+			display: block
+			text-align: center
+			margin: 0 auto;
+			margin-top: 100px
+			margin-bottom: 50px
+		form
+			position: relative
+			display: inline-block
+			.mail_text
+				width: 650px
+				height: 100px
+				border: 1px $main-color solid
+				outline: none
+				font-family: $font-bold
+				font-size: 18px
+				text-transform: uppercase
+				padding-left: 50px
+			.mail_but
+				width: 100px
+				height: 100px
+				background-color: #F2EBE6
+				position: absolute
+				top: 0
+				right: 0
+				border: 1px $main-color solid
+				border-left: none
+				.icon
+					font-size: 36px
+					color: $main-color
+
+footer
+	padding: 85px 0
+	background-color: #E5E5E5
+	.footer_brands
+		margin-left: 215px
+		display: inline-block
+		float: left
+	span
+		text-transform: uppercase
+		font-size: 24px
+		display: block
+		color: $main-color
+		margin-bottom: 50px
+		.right-side
+			margin-left: -5px
+	ul
+		width: 200px
+		display: inline-block
+		margin-right: 125px
+		li, a
+			font-size: 18px
+			color: #b2b2b2
+			margin-bottom: 10px
+		a
+			&:hover
+				color: #b2b2b2
+	.footer_partners
+		float: left
+		display: block
+		width: 100%
+		border-top: 1px $main-color solid
+		padding-top: 60px
+		margin-top: 50px
+		.logo
+			color: #b8b3b0
+			float: left
+		.trustpilot, .prisgaranti
+			display: inline-block
+			float: right
+		.prisgaranti
+			img
+				width: 130px
+				height: 60px
+				margin-bottom: 10px
+
+
+.d6 input 
+  height: 100%
+  width: 0
+  padding: 0 42px 0 15px
+  border: none
+  border-bottom: 2px solid transparent
+  outline: none
+  background: transparent
+  transition: .4s cubic-bezier(0, 0.8, 0, 1)
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 2
+  font-size: 16px
+  padding-top: 15px
+
+
+.d6 input:focus 
+  width: 250px
+  z-index: 1
+  border-bottom: 2px solid #A87C57
+
+.d6 button 
+  background: #F2EBE6
+  border: none
+  height: 42px
+  width: 43px
+  position: absolute
+  top: 0
+  right: 0
+  cursor: pointer
+  background-image: url(../img/icon-set.png)
+
+.d6 button:before 
+  font-size: 16px
+  color: #F9F0DA
+
+#p_prldr
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	background-color: #F2EBE6
+	z-index: 30
+ 
+
+.contpre
+	position: absolute
+	top: 40%
+	left: 48%
+ 
+.svg_anm 
+	position: absolute
+	width: 100px
+	height: 100px
+	background: url(../img/ring.gif) center center no-repeat
+	background-size: 100px 
+	margin: -16px 0 0 -16px
+	color: #F2EBE6
+
+@import "media" // Всегда в конце

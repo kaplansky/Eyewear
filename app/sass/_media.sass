@@ -1,0 +1,314 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	header
+		height: auto
+		padding-bottom: 130px
+
+	header .top_line .logo
+		margin-right: 41px
+
+	header .top_line form
+		width: 200px
+
+	header .header-glass
+		margin-top: 100px
+	.d6 input:focus 
+		width: 200px
+
+ header .header-glass .header-item
+		display: block
+		margin: 0
+		margin-bottom: 40px
+
+	header .header-glass .header-item .header-glass-item
+ 		position: static
+ 		margin-top: -60px
+
+	section.offers
+ 		margin-top: 0
+ 		text-align: center
+ 		margin-top: -75px
+
+	.flex-container
+		display: inline-block
+
+
+	section.offers .offers_item .second_item
+		overflow: hidden
+		height: 700px
+		margin-top: 30px
+		img
+			margin-top: -250px
+
+	section.offers .offers_item .second_item .offers_but
+		top: 390px
+		left: 125px
+
+	section.sellers .flex-container
+		height: 100%
+
+	section.sellers .flex-container .sellers_item
+		float: left
+		margin-bottom: 40px
+
+	section.sellers .flex-container .sellers_item .border_bg
+		display: block
+
+	section.sellers .flex-container .sellers_item .sellers_inner .add_item
+		display: block
+
+	section.sellers .flex-container .sellers_item .sellers_inner span
+		margin-top: 75px
+	
+	section.sellers .flex-container .sellers_item:hover .sellers_inner span
+		margin-top: 75px
+
+	section.sellers .learn_but
+		margin-bottom: 50px
+
+	section.brands .flex-container .brand_item
+		display: inline-block
+		margin-bottom: 40px
+
+	section.news .flex-container
+		text-align: center
+
+	section.news .flex-container .offers_item
+		display: inline-block
+		margin-bottom: 40px
+
+	footer .footer_brands
+		margin: 0
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	header .top_line
+		margin-top: 30px
+
+	header .top_line .logo
+		display: block
+		text-align: center
+		font-size: 80px
+		margin: 0
+		line-height: 1
+		margin-bottom: 40px
+
+	section.offers .offers_item .info .offering_caption
+		font-size: 22px
+
+	section.sellers .flex-container
+		text-align: center
+
+	section.sellers .flex-container .sellers_item
+		float: none
+
+	section.brands .flex-container .brand_item
+		margin: 0
+		margin-bottom: 40px	
+	
+	section.brands .flex-container
+		text-align: center
+
+	footer ul
+		margin: 0
+
+	section.news .e-mail p
+		height: 100%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	header .header-glass .header-item .header-glass-item img
+		width: 100%
+
+	section.offers .offers_item .first_item img
+		width: 100%
+
+	section.news .e-mail form, section.news .e-mail p, section.news .e-mail form .mail_text, section.offers .offers_item .second_item img
+		width: 100%
+
+	section.offers .offers_item .first_item .offers_but
+		top: 45%
+		left: 25%
+
+	section.offers .offers_item span
+		font-size: 25px
+
+	section.offers .offers_item .info 
+		padding: 0
+
+
+	section.offers .offers_item .info .vert_lign
+    width: 85%
+    height: 1px
+    border-top: 1px #a77c5a solid
+    margin: 0 auto
+    float: none
+
+	section.offers .offers_item .info .left_offering, section.offers .offers_item .info .right_offering
+		display: block
+		float: none
+
+	section.offers .offers_item .second_item .offers_but
+		top: 40%
+		left: 25%
+
+	footer .footer_partners
+		text-align: center
+
+	footer .footer_partners .logo
+		float: none
+
+	footer .footer_partners .prisgaranti, footer .footer_partners .trustpilot
+		display: block
+		float: none
+
+	footer .footer_partners .prisgaranti, footer .footer_partners .trustpilot, footer .footer_partners .logo
+		margin-bottom: 40px
+
+	footer span
+		margin-bottom: 30px
+
+	footer .footer_brands
+		margin-bottom: 30px
+
+	.footer_oftherinfo
+		display: inline-block
+
+	header .top_line
+		text-align: center
+
+	header .top_line ul
+		margin-bottom: 20px
+
+	header .top_line .buy_but
+		display: block
+		margin-bottom: 10px
+		float: right
+		width: 100%
+		text-align: right
+
+	section.sellers
+		margin-top: 0
+
+	header .top_line .search
+		float: right
+
+	section.news .flex-container .offers_item
+		margin-right: 0
+
+	header .header-glass .header-item .desc_text
+		line-height: 120px
+
+
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	header .top_line .logo
+		font-size: 70px
+
+	.offers_item img
+		width: 100%
+
+	section.news .flex-container .offers_item .offers_but span
+		font-size: 22px
+		width: 100%
+
+	section.news .flex-container .offers_item .button
+		padding: 20px 20px 20px 18px
+
+	section.offers .offers_item span
+		font-size: 22px
+		line-height: 25px
+
+	a.button
+		padding: 12px 15px 15px 16px
+		font-size: 14px
+
+	section.offers .offers_item .first_item .offers_but
+		top: 50%
+		left: 2%
+
+	section.offers .offers_item i
+		margin-left: 30px
+
+	section.offers .offers_item .second_item .offers_but
+		top: 50%
+		left: 0%
+
+	section.offers .offers_item .second_item
+		height: 100%
+
+	section.offers
+		margin-bottom: 60px
+
+	section.news .e-mail p
+		font-size: 22px
+
+	section.news .flex-container .offers_item .button
+		top: 200px
+
+	section.news .flex-container .offers_item .offers_but
+		left: 10px
+		top: 134px
+
+	section.news .e-mail form .mail_text
+		font-size: 12px
+		padding-left: 10px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
